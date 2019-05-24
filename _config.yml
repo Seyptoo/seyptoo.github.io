@@ -1,7 +1,7 @@
-title: "Blog Title"
-author: "Blog Author"
+title: "Seyptoo"
+author: "Seyptoo"
 description: "Really cool blog about ... something"
-lang: "en"
+lang: "fr"
 
 # Page settings
 permalink: /:title/          # see https://jekyllrb.com/docs/permalinks/
