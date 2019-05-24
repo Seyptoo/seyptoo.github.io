@@ -73,7 +73,7 @@ Donc nous allons essayer d'exécuter le programme snmpwalk et d'énumérer le se
     
 Comme vous pouvez le voir il y a une adresse PSK, cette adresse va nous permettre beaucoup de choses, tout d'abord essayons de cracker le hash, donc le hash est du NTLM. Donc j'ai créé un script en Python pour cracker le hash en question.
 
-{% highlight ruby %}
+{% highlight python %}
 #coding:utf-8
 
 import sys
