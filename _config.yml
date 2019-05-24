@@ -1,52 +1,39 @@
-locale: "en-US"
-title: Strata # Title of your site
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-baseurl: "" # the subpath of your site, e.g. /blog/
-google_analytics_key: ""
+title: "Blog Title"
+author: "Blog Author"
+description: "Really cool blog about ... something"
+lang: "en"
 
-# Default description in social shares for the jekyll-seo-tag gem
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+# Page settings
+permalink: /:title/          # see https://jekyllrb.com/docs/permalinks/
+date_format: "%B %d, %Y"     # see http://shopify.github.io/liquid/filters/date/
+hide_title: false            # remove site heading in the header
+post_footer: true            # show previous and next links at the end of each post
 
-# Author details for the jekyll-seo-tag gem
-author:
-  name: Your Name
-  email: your-email@domain.com
-  twitter: # twitter username without the @ symbol
+# Theme settings
+dark_theme: false            # use the dark mode as default
+dark_header: true            # keep the header dark
+# style: minimal             # use a simpler style inspired by the minima theme
 
-# Social details for the jekyll-seo-tag gem
-social:
-  name: Strata Reloaded Template
-  links:
-    - https://github.com/comfusion/strata-reloaded-jekyll-template
+navigation:                  # (optional) site navigation in the header
+  - index.html
+  - README.md
+#  - title: "https://"       # linking external sites is also supported
 
-permalink: pretty
+icons:                       # (optional) icons in the header, see http://fontawesome.com/icons
+  envelope: "mailto:niklasbuschmann@users.noreply.github.com"
+  github: "https://github.com/niklasbuschmann/contrast"
+  rss: "/contrast/feed.xml"
 
-gems:
-  - "jekyll-feed"
-  - "jekyll-seo-tag"
-  - "jekyll-paginate"
-  - "jekyll-sitemap"
+# Pagination
+show_excerpts: false         # preview articles on the home page
+paginate: 8                  # number of articles per page
+excerpt_separator: "\n\n\n"  # indicate the end of the excerpt by two blank lines
 
-# Jekyll SEO Tag
-webmaster_verifications:
-  google: # 1234
-  bing: # 1234
-  alexa: # 1234
-  yandex: # 1234
+comments:                    # embed disqus or isso comments
+#  disqus: ""
+#  isso: ""
 
-# -----------
-# CloudCannon
-
-social_icons:
-  - Facebook
-  - Google Plus
-  - Instagram
-  - LinkedIn
-  - Pinterest
-  - Tumblr
-  - Twitter
-  - YouTube
-  - RSS
+plugins: 
+ - jekyll-feed
+ - jekyll-paginate
+ - jekyll-default-layout
