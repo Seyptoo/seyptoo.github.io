@@ -30,7 +30,7 @@ layout: default
   {%- assign date_format = site.date_format | default: "%B %d, %Y" -%}
   <div>
     <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: date_format }}</time>
-    <h1><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h1>
+    <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
   </div>
   {% endfor %}
 </article>
