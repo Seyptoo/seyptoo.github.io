@@ -20,8 +20,8 @@ navigation:                  # (optional) site navigation in the header
 #  - title: "https://"       # linking external sites is also supported
 
 icons:                       # (optional) icons in the header, see http://fontawesome.com/icons
-  envelope: "mailto:niklasbuschmann@users.noreply.github.com"
-  github: "https://github.com/niklasbuschmann/contrast"
+  envelope: "noemailsorry@gmail.com"
+  github: "https://github.com/Seyptoo"
   rss: "/contrast/feed.xml"
 
 # Pagination
