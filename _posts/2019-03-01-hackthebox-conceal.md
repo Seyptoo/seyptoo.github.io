@@ -90,7 +90,7 @@ class NTLM(threading.Thread):
 		try:
 			# We will test the arguments.
 			# To handle incorrect errors.
-
+			
 			self.LIST = sys.argv[1]
 			self.NTLM = sys.argv[2]
 	
@@ -117,9 +117,9 @@ class NTLM(threading.Thread):
 			if(self.NTLM.islower() == False):
 				self.NTLM = self.NTLM.lower()
 
-					HASH = hashlib.new('md4', qet.encode('utf-16le')).digest()
-					if(binascii.hexlify(HASH) == self.NTLM):
-						sys.exit("[+] NTLM : %s:%s" %(self.NTLM, qet))
+				HASH = hashlib.new('md4', qet.encode('utf-16le')).digest()
+				if(binascii.hexlify(HASH) == self.NTLM):
+					sys.exit("[+] NTLM : %s:%s" %(self.NTLM, qet))
 
 	def run(self):
 		"""
