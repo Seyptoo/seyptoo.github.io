@@ -1,5 +1,6 @@
 ---
 title: "HackTheBox - LightWeight"
+description: "une bande de sous-merde"
 ---
 
 ![Flower](http://image.noelshack.com/fichiers/2018/52/7/1546159641-capture-du-2018-12-30-09-47-09.png)
