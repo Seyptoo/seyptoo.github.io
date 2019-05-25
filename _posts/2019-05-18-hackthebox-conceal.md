@@ -1,9 +1,8 @@
 ---
 layout: post
 title: "HackTheBox - Conceal"
-description: ippsec.png.png
+description: test.png
 tags: jekyll blog github-page
-path: "/hackthebox-conceal"
 ---
 
 ![Flower](https://image.noelshack.com/fichiers/2019/20/5/1558114549-capture-du-2019-05-17-19-35-32.png)
