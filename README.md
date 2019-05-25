@@ -1,6 +1,6 @@
 ---
-title: "À PROPOS", "ARCHIVE"
-permalink: "/propos/", "/archive/"
+title: "À PROPOS"
+permalink: "/propos/"
 ---
 
 Âgé de 16 ans, passionné d'informatique plus précisement de la sécurité informatique, polyvalent, et adore faire de la programmation en Python et en C en particulier et également aime faire du CISCO sur des platformes comme Cisco Packet Tracer. <br />
