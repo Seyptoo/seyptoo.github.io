@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "HackTheBox - Conceal"
-description: Sans titre-12.jpg
+description: ippsec.png.png
 tags: jekyll blog github-page
 path: "/hackthebox-conceal"
 ---
