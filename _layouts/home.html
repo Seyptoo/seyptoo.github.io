@@ -41,10 +41,9 @@ layout: default
   <header><h1 class="test">Derniers Articles</h1></header>
   {% for post in site.posts %}
   {%- assign date_format = site.date_format | default: "%B %d, %Y" -%}
-  <p>{{ post.tags }}</p>
   <div>
     <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: date_format }}</time>
-    <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2> <br/> <a href="{{ post.url }}"><img src="{{ post.description }}" class="arrondie"></img></a>
+    <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2><p>{{ post.tags }}</p><br/> <a href="{{ post.url }}"><img src="{{ post.description }}" class="arrondie"></img></a>
   </div>
   {% endfor %}
 </article>
