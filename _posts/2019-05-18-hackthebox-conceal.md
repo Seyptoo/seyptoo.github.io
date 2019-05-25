@@ -1,7 +1,7 @@
 ---
 title: "HackTheBox - Conceal"
 description: test.png
-tags: "cc je taime"
+tags: ["Dans cet article je vous présente comment être root dans le box `Conceal`, c'est une machine vulnérable à la retraite créée par `bashlogic`, si vous voulez pas vous faire spoil, ne lisez pas l'article."]
 ---
 
 ![Flower](https://image.noelshack.com/fichiers/2019/20/5/1558114549-capture-du-2019-05-17-19-35-32.png)
