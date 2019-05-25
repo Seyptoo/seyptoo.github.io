@@ -1,9 +1,6 @@
 ---
 title: "À PROPOS"
 permalink: "/propos/"
----
-
----
 title: "ARCHIVE"
 permalink: "/archive/"
 ---
