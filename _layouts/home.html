@@ -4,6 +4,16 @@ layout: default
 <head>
 <link rel="stylesheet" type="text/css" href="file.css">
 </head>
+<style>
+  .test
+  {
+    display: block;
+    content: " ";
+    margin-top: 10px;
+    width: 40px;
+    border-bottom: 3px solid rgba(235,35,68,1);
+  }
+</style>
 {% if site.show_excerpts and page.name == "index.html" %}
 {% for page in paginator.posts %}
 <article>
