@@ -13,6 +13,11 @@ layout: default
     width: 40px;
     border-bottom: 3px solid rgba(235,35,68,1);
   }
+  .monBR:after
+  {
+    display: block;
+    content: "";
+  }
 </style>
 {% if site.show_excerpts and page.name == "index.html" %}
 {% for page in paginator.posts %}
@@ -43,7 +48,7 @@ layout: default
   {%- assign date_format = site.date_format | default: "%B %d, %Y" -%}
   <div>
     <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: date_format }}</time>
-    <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2><p><span class="monBR">{{ post.tags }}</span></p><br/>
+    <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2><p class="monBR">{{ post.tags }}</p><br/>
     <a href="{{ post.url }}"><img src="{{ post.description }}" class="arrondie"></img></a>
   </div>
   {% endfor %}
