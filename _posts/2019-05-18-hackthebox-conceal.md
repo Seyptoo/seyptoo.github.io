@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "HackTheBox - Conceal"
-description: ipsec.jpg.jpg
+description: Sans titre-12.jpg
 tags: jekyll blog github-page
 ---
 
