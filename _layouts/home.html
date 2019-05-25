@@ -26,7 +26,6 @@ layout: default
 <article class="archive">
   {{ content }}
   <header><h1>Posts</h1></header>
-  {% for post in site.posts %}
   {%- assign date_format = site.date_format | default: "%B %d, %Y" -%}
   <div>
     <time datetime="{{ post.date[0] | date_to_xmlschema }}">{{ post.date[0] | date: date_format }}</time>
