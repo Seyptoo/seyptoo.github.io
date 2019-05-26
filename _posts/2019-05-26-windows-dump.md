@@ -38,9 +38,9 @@ Pour l'installation de `impacket` : <br />
 
 Donc pour dump le fichier en question vous allez dans le dossier `examples` dans le dossier `impacket`. Et ensuite d'exécuter le fichier `secretsdump.py`.
 
-> -sam    : Spécifier le fichier `SAM`.
-> -system : Spécifier le fichier `SYSTEM`.
-> LOCAL   : Si vous voulez analyser les fichiers locaux.
+> -sam    : Spécifier le fichier `SAM`. <br />
+> -system : Spécifier le fichier `SYSTEM`. <br />
+> LOCAL   : Si vous voulez analyser les fichiers locaux.<br />
 
 ![Flower](https://image.noelshack.com/fichiers/2019/21/7/1558905838-screenshot-2.png)
 
