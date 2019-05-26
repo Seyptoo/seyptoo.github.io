@@ -4,7 +4,7 @@ description: "ldap_hierarchy_mit.png"
 tags: ["Dans cet article je vous présente comment être root dans la boîte Lightweight, une bonne machine qui nécessite beaucoup d'énumération, il y avait le système de capabilities sur la machine permettant d'exécuter des fichiers avec des droits."]
 ---
 
-![Flower](http://image.noelshack.com/fichiers/2018/52/7/1546159641-capture-du-2018-12-30-09-47-09.png)
+![Flower](../ldap_hierarchy_mit.png)
 
 Informations
 ----
