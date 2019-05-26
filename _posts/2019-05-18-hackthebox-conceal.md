@@ -41,7 +41,7 @@ Donc il y a aucun port ouvert visiblement donc va voir pour l'UDP et de chercher
     Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
     Nmap done: 1 IP address (1 host up) scanned in 39.80 seconds
     
-Pour scanner les port utilisant le protocole de communication User Datagram Protocol (UDP), nous allons utiliser le program masscan. Car au scan Transmission Control Protocol (TCP) il y avait aucun port d'ouvert.
+Pour scanner les port utilisant le protocole de communication User Datagram Protocol (UDP), nous allons utiliser le programme masscan. Car au scan Transmission Control Protocol (TCP) il y avait aucun port d'ouvert.
 
     root@Seyptoo:~/htb/box/Conceal# masscan -p1-65535,U:1-65535 10.10.10.116 --rate=1000 -e tun0
 
