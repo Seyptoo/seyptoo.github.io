@@ -8,7 +8,7 @@ tags: ["Dans cet article je vous présente le fonctionnement d'un fichier Securi
 
 Introduction
 ----
-Dans ce cours à but éducatif nous allons voir comment dumper et cracker des mots de passes Microsoft grâce au système de fichier `Security Account Manager` (SAM) en français `Gestionnaire de compte de sécurité`.
+Dans ce cours à but éducatif nous allons voir comment dumper et casser des mots de passes Microsoft grâce au système de fichier `Security Account Manager` (SAM) en français `Gestionnaire de compte de sécurité`.
 
 SAM
 ----
