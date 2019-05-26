@@ -1,7 +1,7 @@
 ---
 title: "[SAM] Dumping des informations d'identification Microsoft"
 description: sam.png
-tags: ["Dans cet article je vous présente le fonctionnement d'un fichier Security Account Manage (SAM) et de vous expliquez comment dump un fichier SAM et de cracker un fichier SAM avec un programme Linux."]
+tags: ["Dans cet article je vous présente le fonctionnement d'un fichier Security Account Manage (SAM), et de vous montrer comment dump un fichier SAM grâce au fichier SYSTEM sous une machine Windows."]
 ---
 
 ![Flower](../sam.png)
@@ -26,18 +26,14 @@ Nous allons commencer par copier les fichiers `SAM` et `SYSTEM` via la commande 
 
 Le fichier `SAM` et `SYSTEM` ont été copier avec succès donc maintenant nous allons aller sous Linux pour installer quelques paquets pour dump les deux fichiers en question.
 
-SAMDUMP
+IMPACKET
 ----
-Avant de dump le fichier on doit s'assurer que `samdump2` est bien installé sur votre ordinateur.
+Donc avant de dump le fichier, on va s'assurer que `impacket` est installer dans notre machine, voici le lien pour l'installer https://github.com/SecureAuthCorp/impacket.
 
-    root@Seyptoo:/home/seyptoo# which samdump2
-    /usr/bin/samdump2
+Impacket est un ensemble de classes Python permettant de travailler avec des protocoles réseau. Impacket se concentre sur la fourniture d'un accès programmatique de bas niveau aux paquets et à certains protocoles (par exemple, SMB1-3 et MSRPC), la mise en œuvre du protocole elle-même.
 
-S'il ne vous renvoie rien, vous devez installer samdump2 via la commande apt-get.
-
-     root@Seyptoo:/home/seyptoo# sudo apt-get install samdump2
-     Lecture des listes de paquets... Fait
-     [...SNIP...]
+Pour l'installation de `impacket` :
+![Flower](https://image.noelshack.com/fichiers/2019/21/7/1558905335-screenshot-1.png)
 
 Il faut d'abord spécifier le fichier `SYSTEM` et enfin le fichier `SAM` pour dumper les fichiers.
 
