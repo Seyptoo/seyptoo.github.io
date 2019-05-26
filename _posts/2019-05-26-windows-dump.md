@@ -24,7 +24,7 @@ Nous allons commencer par copier les fichiers `SAM` et `SYSTEM` via la commande 
 
 ![Flower](https://image.noelshack.com/fichiers/2019/21/7/1558894619-screenshot-2.png)
 
-Le fichier `SAM` et `SYSTEM` ont été copier avec succès donc maintenant nous allons aller sous Linux pour installer quelques paquets pour dump les deux fichiers en question.
+Le fichier `SAM` et `SYSTEM` ont été copier avec succès donc maintenant nous allons installer quelques paquets pour dump les deux fichiers en question.
 
 IMPACKET
 ----
@@ -44,5 +44,5 @@ Donc pour dump le fichier en question vous allez dans le dossier `examples` dans
 
 ![Flower](https://image.noelshack.com/fichiers/2019/21/7/1558905838-screenshot-2.png)
 
-Le dumping à fonctionner avec succès donc maintenant nous allons passer au crack du hash avec john. Il faut avant tout identifier le hash cela ressemble grandement à du `NT Lan Manager` (NTLM). Vous pouvez très bien ne pas identifier le hash pour cracker le hash ça reste facultatif.. le programme john va chercher par lui même pour identifier le hash en question.
+Le dumping à fonctionner avec succès donc maintenant nous allons passer au casse du hash avec john. Il faut avant tout identifier le hash cela ressemble grandement à du `NT Lan Manager` (NTLM). Vous pouvez très bien ne pas identifier le hash pour casser le hash ça reste facultatif.. le programme john va chercher par lui même pour identifier le hash en question.
 
