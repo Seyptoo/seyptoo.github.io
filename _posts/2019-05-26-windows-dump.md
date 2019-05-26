@@ -28,7 +28,7 @@ Le fichier `SAM` et `SYSTEM` ont été copier avec succès donc maintenant nous 
 
 IMPACKET
 ----
-Donc avant de dump le fichier, on va s'assurer que `impacket` est installer dans notre machine, voici le lien pour l'installer https://github.com/SecureAuthCorp/impacket.
+Donc avant de dump le fichier, on va s'assurer que `impacket` est installer dans notre machine, voici le lien pour l'installer [impacket](https://github.com/SecureAuthCorp/impacket)
 
 Impacket est un ensemble de classes Python permettant de travailler avec des protocoles réseau. Impacket se concentre sur la fourniture d'un accès programmatique de bas niveau aux paquets et à certains protocoles (par exemple, SMB1-3 et MSRPC), la mise en œuvre du protocole elle-même.
 
@@ -38,10 +38,11 @@ Pour l'installation de `impacket` : <br />
 
 Donc pour dump le fichier en question vous allez dans le dossier `examples` dans le dossier `impacket`. Et ensuite d'exécuter le fichier `secretsdump.py`.
 
+> -sam    : Spécifier le fichier `SAM`.
+> -system : Spécifier le fichier `SYSTEM`.
+> LOCAL   : Si vous voulez analyser les fichiers locaux.
+
 ![Flower](https://image.noelshack.com/fichiers/2019/21/7/1558905838-screenshot-2.png)
 
 Le dumping à fonctionner avec succès donc maintenant nous allons passer au crack du hash avec john. Il faut avant tout identifier le hash cela ressemble grandement à du `NT Lan Manager` (NTLM). Vous pouvez très bien ne pas identifier le hash pour cracker le hash ça reste facultatif.. le programme john va chercher par lui même pour identifier le hash en question. Nous allons avant tout mettre les deux hashs dans un fichier.
-
-    $ echo aad3b435b51404eeaad3b435b51404ee > hashs.log
-    $ echo 26112010952d963c8dc4217daec986d9 >> hashs.log
 
