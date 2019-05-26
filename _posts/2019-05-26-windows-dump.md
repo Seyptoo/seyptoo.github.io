@@ -1,7 +1,7 @@
 ---
 title: "[SAM] Dumping des informations d'identification Microsoft"
-description: test.png
-tags: ["Dans cet article je vous présente comment fonctionne le système Security Account Manage (SAM) et vous montrez comment dump un fichier SAM."]
+description: sam.png
+tags: ["Dans cet article je vous présente le fonctionnement d'un fichier Security Account Manage (SAM) et de vous expliquez comment dump un fichier SAM et de cracker un fichier SAM avec un programme Linux."]
 ---
 
 ![Flower](../sam.png)
