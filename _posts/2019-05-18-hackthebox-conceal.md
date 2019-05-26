@@ -15,8 +15,8 @@ Résumé : <br />
 
 Le système Conceal, disponible sur la platform [HackTheBox](https://www.hackthebox.eu/), fut très intéressant et amusante. Le niveau de difficulté était plutôt élevée, étant donné qu’une bonne énumération était amplement suffisante. De plus, j’ai appris beaucoup de chose tout au long de l’exploitation des failles de ce système. <br />
 
-- Il y a le port SNMP qui est ouvert, et il a été mis en public concrètement, et nous trouvons une adresse PSK. <br />
-- Et ensuite nous devons cracker l'adresse PSK. <br />
+- Il y a le port Simple Network Manager Protocol (SNMP) qui est ouvert, et il a été mis en public concrètement, et nous trouvons une adresse PSK. <br />
+- Ensuite, nous allons cracker la preshared key (PSK) utiliser durant la phase d’authentification à un Virtual Private Network (VPN) utilisant IPsec. <br />
 - Une bonne configuration pour avoir accès, avec le protocole IPSEC avec le programme StrongSwan. <br />
 - Nous devons créer un point de routage avec IPSEC pour rediriger les ports et d'accéder à la machine. <br />
 - On peut upload des fichiers dans le FTP, et ensuite d'exécuter le script dans la page web et faire son reverse shell. <br />
@@ -267,7 +267,7 @@ Donc si on refait un scan de port TCP nous allons voir que il y'a des service ou
 	Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .                                                                         
 	Nmap done: 1 IP address (1 host up) scanned in 23.56 seconds
 
-Nous avons des informations très intéressantes, on peut voir qu'on peut se connecter en tant que Anonymous dans le FTP et on peut également upload des fichiers.
+Nous avons des informations très intéressantes, on peut voir qu'on peut se connecter en tant que Anonymous dans le FTP et on peut uploader des fichiers sur le système via le protocole FTP.
 	
 HTTP
 ----
@@ -331,7 +331,7 @@ Après avoir exécuté le code powershell nous avons un shell, mais le problème
 
 PrivEsc
 ----
-Le privesc n'est pas très compliqué sur la machine nous allons taper la commande ci-dessous. En exécutant whoami /priv, nous voyons que les droits de l'utilisateur nous permettront d'utiliser l'exploit juicy-potato pour s'élever à NTAUTORITY/SYSTEM. 
+Le privesc n'est pas très compliqué sur la machine nous allons taper la commande ci-dessous. En exécutant whoami /priv, nous voyons que les droits de l'utilisateur nous permettront d'utiliser l'exploit juicy-potato pour s'élever à NT AUTORITY/SYSTEM. 
 
 	
 	C:\Users\Windows\System32>whoami /priv
