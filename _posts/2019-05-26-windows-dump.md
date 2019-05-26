@@ -32,7 +32,7 @@ Donc avant de dump le fichier, on va s'assurer que `impacket` est installer dans
 
 Impacket est un ensemble de classes Python permettant de travailler avec des protocoles réseau. Impacket se concentre sur la fourniture d'un accès programmatique de bas niveau aux paquets et à certains protocoles (par exemple, SMB1-3 et MSRPC), la mise en œuvre du protocole elle-même.
 
-Pour l'installation de `impacket` :
+Pour l'installation de `impacket` : <br />
 ![Flower](https://image.noelshack.com/fichiers/2019/21/7/1558905335-screenshot-1.png)
 
 Il faut d'abord spécifier le fichier `SYSTEM` et enfin le fichier `SAM` pour dumper les fichiers.
