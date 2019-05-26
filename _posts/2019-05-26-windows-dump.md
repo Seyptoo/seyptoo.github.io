@@ -20,7 +20,7 @@ La SAM est stockée physiquement dans le fichier `%SystemRoot%\system32\Config\S
 
 ![Flower](https://image.noelshack.com/fichiers/2019/21/7/1558894108-screenshot-5.png)
 
-Nous allons commencer par copier les fichiers `SAM` et `SYSTEM` via la commande `reg`. La commande `reg` est une commande Microsoft. Et la commande `reg` est un moyen pour gérer le registre de Windows.
+Nous allons commencer par copier les fichiers `SAM` et `SYSTEM` via la commande `reg`. La commande `reg` est une commande Microsoft et le but du programme est de gérer le registre de Windows.
 
 ![Flower](https://image.noelshack.com/fichiers/2019/21/7/1558894619-screenshot-2.png)
 
