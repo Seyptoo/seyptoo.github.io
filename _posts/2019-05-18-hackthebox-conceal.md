@@ -13,7 +13,7 @@ Informations
 
 Résumé : <br />
 
-La boîte Conceal était une boîte assez intéressante et très amusante, le niveau était assez simple, juste une bonne énumération était amplement suffisante. Et j'ai beaucoup appris de chose dans cette fameuse boîte. <br />
+Le système Conceal, disponible sur la platform [HackTheBox](https://www.hackthebox.eu/), fut très intéressant et amusante. Le niveau de difficulté était plutôt élevée, étant donné qu’une bonne énumération était amplement suffisante. De plus, j’ai appris beaucoup de chose tout au long de l’exploitation des failles de ce système. <br />
 
 - Il y a le port SNMP qui est ouvert, et il a été mis en public concrètement, et nous trouvons une adresse PSK. <br />
 - Et ensuite nous devons cracker l'adresse PSK. <br />
@@ -41,7 +41,7 @@ Donc il y a aucun port ouvert visiblement donc va voir pour l'UDP et de chercher
     Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
     Nmap done: 1 IP address (1 host up) scanned in 39.80 seconds
     
-Pour le UDP je vais utiliser le programme 'masscan'.
+Pour scanner les port utilisant le protocole de communication User Datagram Protocol (UDP), nous allons utiliser le program masscan. Car au scan Transmission Control Protocol (TCP) il y avait aucun port d'ouvert.
 
     root@Seyptoo:~/htb/box/Conceal# masscan -p1-65535,U:1-65535 10.10.10.116 --rate=1000 -e tun0
 
@@ -51,7 +51,7 @@ Pour le UDP je vais utiliser le programme 'masscan'.
     Scanning 1 hosts [131070 ports/host]
     Discovered open port 161/udp on 10.10.10.116                                   
 
-Donc comme vous pouvez le voir il y a le port 161/UDP qui est ouvert nous cela correspond au protocole SNMP, donc essayons d'énumérer ça avec Nmap et de voir les informations nécessaires.
+Donc comme vous pouvez le voir il y a le port 161/UDP qui est ouvert nous cela correspond au protocole Simple Network Manager Protocol (SNMP), donc essayons d'énumérer ça avec Nmap et de voir les informations nécessaires.
 
     root@Seyptoo:~/htb/box/Conceal# nmap -sU -sC -sV -p161 10.10.10.116
 
