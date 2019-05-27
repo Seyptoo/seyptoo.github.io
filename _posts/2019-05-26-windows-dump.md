@@ -50,13 +50,11 @@ Concrètement pour utiliser le programme `secretsdump.py` il vous suffit d'utili
 
 ![Flower](https://image.noelshack.com/fichiers/2019/21/7/1558905838-screenshot-2.png)
 
-Le dumping à fonctionner avec succès donc maintenant nous allons passer au casse du HASH avec john. Il faut avant tout identifier le HASH cela ressemble grandement à du `NT Lan Manager` (NTLM). 
-
-Vous pouvez très bien ne pas identifier le HASH pour casser le HASH ça reste facultatif.. Le programme john va chercher par lui même pour identifier le HASH en question (Avantage par rapport à `hashcat`).
+Le dumping à fonctionner avec succès donc maintenant nous allons passer au casse du HASH. Il faut avant tout identifier le HASH cela ressemble grandement à du `NT Lan Manager` (NTLM). 
 
 CRACK
 ----
-Aujourd'hui je suis de bonne humeur, j'ai fais un petit script pour vous qui permet casser le HASH rien que pour vous. Il a été développer en Python.
+Alors concrètement comme aujourd'hui je suis de bonne humeur, j'ai crée un script en Python rien que pour vous ahha. C'est un petit script qui fais très bien le taf pour bruteforce le `HASH`.
 
 {% highlight python %}
 #coding:utf-8
