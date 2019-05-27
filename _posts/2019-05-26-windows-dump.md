@@ -98,3 +98,5 @@ if __name__ == "__main__":
 
 Donc pour utiliser le programme c'est pas très compliquer il vous suffit de spécifier la wordlist et le hash à casser en question. N'oubliez pas de mettre les arguments sinon le programme ne fonctionne pas.
 
+![Flower](../cracksam.gif)
+	
