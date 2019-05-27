@@ -42,6 +42,8 @@ Avant d'utiliser le programme nous allons mettre le dossier `examples` dans la v
 
 ![Flower](https://image.noelshack.com/fichiers/2019/22/1/1558952753-screenshot-1.png)
 
+Concrètement pour utiliser le programme `secretsdump.py` il vous suffit d'utiliser seulement 3 options en particulier, `-sam`, `-system` et fin pour l'option final `LOCAL`.
+
 > -sam    : Spécifier le fichier `SAM`. <br />
 > -system : Spécifier le fichier `SYSTEM`. <br />
 > LOCAL   : Si vous voulez analyser les fichiers locaux.<br />
