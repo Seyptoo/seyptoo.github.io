@@ -65,39 +65,60 @@ import sys
 import hashlib
 import binascii
 
-class bert_lan(object):
-	def __init__(self, ptr_open=None, hash_ntlm=None):
-		try:
-			self.wordlist = sys.argv[1]
-			self.hashs    = sys.argv[2]
-		except IndexError as except_argument:
-			sys.exit(except_argument)
+def recover_hash_nt():
+	with open(sys.argv[1], "r") as ptr_open:
+		ptr_open = ptr_open.readlines()
 
-		self.ptr_open  = ptr_open
-		self.hash_ntlm = hash_ntlm
+	username_list = []
+	hash_checking = []
 
-	def __str__(self):
+	for line_strip in ptr_open:
+		'''
+			Boucle pour lire le fichier et de
+			trouver les valeurs précises dans la fonction __recover_hash_nt__().
+		'''
+		line_strip = line_strip.strip("\n")
+		line_strip = line_strip.split(":")
 
-		if(self.wordlist):
-			with open(self.wordlist, "r") as self.ptr_open:
-				self.ptr_open = self.ptr_open.readlines()
+		username   = line_strip[0]
+		hash_check = line_strip[3]
 
-		if(self.hashs):
-			for self_strip in self.ptr_open:
-				self_strip = self_strip.strip("\n")
+		username_list.append(username)
+		hash_checking.append(hash_check)
 
-				self.hash_ntlm = hashlib.new('md4', self_strip.encode('utf-16le')).digest()
-				if(binascii.hexlify(self.hash_ntlm) == self.hashs):
-					print("cracked : %s" %(self_strip))
+	with open(sys.argv[2], "r") as ptr_wordlist:
+		ptr_wordlist = ptr_wordlist.readlines()
+
+	for ptr_hash in hash_checking:
+		ptr_hash = ptr_hash.strip("\n")
+		'''
+			read the hash in the loop
+			__recover_hash_nt()__.
+		'''
+		for ptr_username in username_list:
+			ptr_username = ptr_username.strip("\n")
+			'''
+				read the username in the loop
+				__recover_hash_nt()__.
+			'''
+			for ptr_list in ptr_wordlist:
+				ptr_list = ptr_list.strip("\n")
+				'''
+					read the wordlist in the loop.
+					__recover_hash_nt()__.
+				'''
+				ptr_ntlm = hashlib.new('md4', ptr_list.encode('utf-16le')).digest()
+				if(binascii.hexlify(ptr_ntlm) == ptr_hash):
+					print("[+] CRACKED !! : [%s:%s]" %(ptr_username, ptr_list))
 					sys.exit(0)
 
 if __name__ == "__main__":
-	bert_lan().__str__()
+	recover_hash_nt()
   
 {% endhighlight %}
 
 Donc pour utiliser le programme c'est pas très compliquer il vous suffit de spécifier la wordlist et le hash à casser en question. N'oubliez pas de mettre les arguments sinon le programme ne fonctionne pas.
 	
-![Flower](https://image.noelshack.com/fichiers/2019/22/1/1558956402-screenshot-2.png)
+![Flower](https://image.noelshack.com/fichiers/2019/22/1/1558958656-screenshot-1.png)
 
 Le programme à réussis à casser le HASH en quelques secondes.
