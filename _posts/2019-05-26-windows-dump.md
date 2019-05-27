@@ -16,7 +16,7 @@ Alors commençons par la base des bases c'est quoi `SAM` concrètement ? <br />
 
 La SAM (Security Account Manager ou gestionnaire des comptes de sécurité) est la base de données des comptes locaux sur Windows Server 2003, Windows XP, Windows 2000. C'est l'un des composants de la base de registre. Elle contient les mots de passe locaux.
 
-La SAM est stockée physiquement dans le fichier `%SystemRoot%\system32\Config\SAM`. C'est un fichier de ruche inclus dans `HKEY_LOCAL_MACHINE`, lui-même inclus dans la base de registre. Si vous regardez bien, nous voyons très bien que le fichier `SAM` et `SYSTEM` sont dans le registre de Windows.
+La SAM est stockée physiquement dans le fichier `%SystemRoot%\system32\Config\SAM`. C'est un fichier de ruche inclus dans `HKEY_LOCAL_MACHINE`, lui-même inclus dans la base de registre. Si vous regardez bien, nous voyons très bien que les clés `SAM` et `SYSTEM` sont dans le registre de Windows.
 
 ![Flower](https://image.noelshack.com/fichiers/2019/21/7/1558894108-screenshot-5.png)
 
@@ -53,4 +53,48 @@ Concrètement pour utiliser le programme `secretsdump.py` il vous suffit d'utili
 Le dumping à fonctionner avec succès donc maintenant nous allons passer au casse du HASH avec john. Il faut avant tout identifier le HASH cela ressemble grandement à du `NT Lan Manager` (NTLM). 
 
 Vous pouvez très bien ne pas identifier le HASH pour casser le HASH ça reste facultatif.. Le programme john va chercher par lui même pour identifier le HASH en question (Avantage par rapport à `hashcat`).
+
+CRACK
+----
+Aujourd'hui je suis de bonne humeur, j'ai fais un petit script pour vous qui permet casser le HASH rien que pour vous. Il a été développer en Python.
+
+{% highlight python %}
+#coding:utf-8
+
+import sys
+import hashlib
+import binascii
+
+class bert_lan(object):
+	def __init__(self, ptr_open=None, hash_ntlm=None):
+		try:
+			self.wordlist = sys.argv[1]
+			self.hashs    = sys.argv[2]
+		except IndexError as except_argument:
+			sys.exit(except_argument)
+
+		self.ptr_open  = ptr_open
+		self.hash_ntlm = hash_ntlm
+
+	def __str__(self):
+
+		if(self.wordlist):
+			with open(self.wordlist, "r") as self.ptr_open:
+				self.ptr_open = self.ptr_open.readlines()
+
+		if(self.hashs):
+			for self_strip in self.ptr_open:
+				self_strip = self_strip.strip("\n")
+
+				self.hash_ntlm = hashlib.new('md4', self_strip.encode('utf-16le')).digest()
+				if(binascii.hexlify(self.hash_ntlm) == self.hashs):
+					print("cracked : %s" %(self_strip))
+					sys.exit(0)
+
+if __name__ == "__main__":
+	bert_lan().__str__()
+  
+{% endhighlight %}
+
+Donc pour utiliser le programme c'est pas très compliquer il vous suffit de spécifier la wordlist et le hash à casser en question. N'oubliez pas de mettre les arguments sinon le programme ne fonctionne pas.
 
