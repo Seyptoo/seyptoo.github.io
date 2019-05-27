@@ -117,8 +117,12 @@ if __name__ == "__main__":
   
 {% endhighlight %}
 
-Donc pour utiliser le programme c'est pas très compliquer il vous suffit de spécifier la wordlist et le hash à casser en question. N'oubliez pas de mettre les arguments sinon le programme ne fonctionne pas.
-	
+Donc pour utiliser le programme c'est pas très compliquer il vous suffit de spécifier la wordlist et le hash à casser en question. N'oubliez pas de mettre les arguments sinon le programme ne fonctionne pas. Si vous souhaitez casser un HASH, vous devez crée un fichier texte, et que vous mettez la ligne des informations sur l'utilisateur.
+
+Par exemple mon fichier hash.log :
+
+	Seyptoo:1001:aad3b435b51404eeaad3b435b51404ee:a9fdfa038c4b75ebc76dc855dd74f0da:::
+
 ![Flower](https://image.noelshack.com/fichiers/2019/22/1/1558958656-screenshot-1.png)
 
 Le programme à réussis à casser le HASH en quelques secondes.
