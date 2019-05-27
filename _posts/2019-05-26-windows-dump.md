@@ -97,6 +97,7 @@ if __name__ == "__main__":
 {% endhighlight %}
 
 Donc pour utiliser le programme c'est pas très compliquer il vous suffit de spécifier la wordlist et le hash à casser en question. N'oubliez pas de mettre les arguments sinon le programme ne fonctionne pas.
-
-![Flower](../cracksam.gif)
 	
+![Flower](https://image.noelshack.com/fichiers/2019/22/1/1558956402-screenshot-2.png)
+
+Le programme à réussis à casser le HASH en quelques secondes.
