@@ -122,5 +122,3 @@ Par exemple mon fichier hash.log :
 	Seyptoo:1001:aad3b435b51404eeaad3b435b51404ee:a9fdfa038c4b75ebc76dc855dd74f0da:::
 
 ![Flower](https://image.noelshack.com/fichiers/2019/22/1/1558959032-screenshot-2.png)
-
-Le programme à réussis à casser le HASH en quelques secondes.
