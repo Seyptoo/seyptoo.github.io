@@ -26,7 +26,7 @@ Une très bonne documentation de `REG` : [REG](https://windows.developpez.com/co
 
 ![Flower](https://image.noelshack.com/fichiers/2019/21/7/1558894619-screenshot-2.png)
 
-Les deux sous-clés `SAM` et `SYSTEM` ont été copier avec succès après avoir copier. Nous allons installer quelques paquets pour dumper les deux fichiers en question.
+Les deux sous-clés `SAM` et `SYSTEM` ont été enregistrer dans la racine de Windows `C:\sam/system`. Nous arrivons dans la phase pour dumper les fichiers dans mon cas je vais faire ça sous Windows mais sous Linux ça peut également très bien fonctionner.
 
 IMPACKET
 ----
