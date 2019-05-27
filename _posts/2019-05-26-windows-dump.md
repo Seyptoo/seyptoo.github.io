@@ -38,7 +38,7 @@ Pour l'installation de `impacket` : <br />
 
 ![Flower](https://image.noelshack.com/fichiers/2019/21/7/1558905335-screenshot-1.png)
 
-Avant d'utiliser le programme nous allons mettre le dossier `examples` dans la variable d'environnement de l'ordinateur. Pour éviter toujours d'aller vers le dossier qui peut être assez long.
+Avant d'utiliser le programme nous allons mettre le dossier `examples` dans la variable d'environnement de l'ordinateur. Pour éviter toujours d'aller vers le dossier, ça peut être assez long et assez chiant.
 
 ![Flower](https://image.noelshack.com/fichiers/2019/22/1/1558952753-screenshot-1.png)
 
@@ -50,11 +50,11 @@ Concrètement pour utiliser le programme `secretsdump.py` il vous suffit d'utili
 
 ![Flower](https://image.noelshack.com/fichiers/2019/21/7/1558905838-screenshot-2.png)
 
-Le dumping à fonctionner avec succès donc maintenant nous allons passer au casse du HASH. Il faut avant tout identifier le HASH cela ressemble grandement à du `NT Lan Manager` (NTLM). 
+Le dumping à fonctionner avec succès donc maintenant nous allons passer au casse du HASH. Il faut avant tout identifier le `HASH` cela ressemble grandement à du `NT Lan Manager` (NTLM). 
 
 CRACK
 ----
-Alors concrètement comme aujourd'hui je suis de bonne humeur, j'ai crée un script en Python rien que pour vous ahha. C'est un petit script qui fais très bien le taf pour bruteforce le `HASH`.
+Alors concrètement comme aujourd'hui je suis de bonne humeur, j'ai crée un script en Python rien que pour vous. C'est un petit script qui fais très bien le boulot pour bruteforce le `HASH`.
 
 {% highlight python %}
 #coding:utf-8
@@ -115,7 +115,13 @@ if __name__ == "__main__":
   
 {% endhighlight %}
 
-Pour utiliser le programme ce n'est pas très compliquer il vous suffit de spécifier le fichier ou il y'a les HASH à casser et ensuite la wordlist. N'oubliez pas de mettre les arguments sinon le programme ne fonctionne pas. Si vous souhaitez casser un HASH, vous devez créé un fichier texte, et que vous mettez la ligne avec l'utilisateur..
+L'utilisation du programme :
+
+	C:\Users\Administrateur\Desktop>python ntlm.py hash.log rockyou.txt
+
+Nous avons juste 2 arguments à mettre.. Dans le fichier `hash.log` il y a les hashs de stockés et dans le fichier `rockyou.txt` c'est simplement une wordlist pris sur le web.
+
+N'oubliez pas de mettre les arguments sinon le programme ne fonctionne pas. Si vous souhaitez casser un HASH, vous devez créé un fichier texte, et que vous mettez la ligne avec l'utilisateur.
 
 Par exemple mon fichier hash.log :
 
