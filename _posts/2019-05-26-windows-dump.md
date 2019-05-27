@@ -30,7 +30,7 @@ Les deux sous-clés `SAM` et `SYSTEM` ont été enregistrer dans la racine de Wi
 
 IMPACKET
 ----
-Donc avant de dump le fichier, on va s'assurer que `impacket` est installer dans notre machine, voici le lien pour l'installer [impacket](https://github.com/SecureAuthCorp/impacket)
+Avant de dump le fichier, on va s'assurer que `impacket` est installer dans notre machine, voici le lien pour l'installer [impacket](https://github.com/SecureAuthCorp/impacket)
 
 Impacket est un ensemble de classes Python permettant de travailler avec des protocoles réseau. Impacket se concentre sur la fourniture d'un accès programmatique de bas niveau aux paquets et à certains protocoles (par exemple, SMB1-3 et MSRPC), la mise en œuvre du protocole elle-même.
 
@@ -38,7 +38,9 @@ Pour l'installation de `impacket` : <br />
 
 ![Flower](https://image.noelshack.com/fichiers/2019/21/7/1558905335-screenshot-1.png)
 
-Donc pour dump le fichier en question vous allez dans le dossier `examples` dans le dossier `impacket`. Et ensuite d'exécuter le fichier `secretsdump.py`.
+Avant d'utiliser le programme nous allons mettre le dossier `examples` dans la variable d'environnement de l'ordinateur. Pour éviter toujours d'aller vers le dossier qui peut être assez long.
+
+![Flower](https://image.noelshack.com/fichiers/2019/22/1/1558952753-screenshot-1.png)
 
 > -sam    : Spécifier le fichier `SAM`. <br />
 > -system : Spécifier le fichier `SYSTEM`. <br />
