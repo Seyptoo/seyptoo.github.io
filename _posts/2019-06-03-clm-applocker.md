@@ -66,7 +66,7 @@ Ah oui un détail assez important n'oublier surtout pas de mettre le fichier `Ps
 
 ![Flower](https://image.noelshack.com/fichiers/2019/23/1/1559585660-screenshot-2.png)
 
-Et enfin pendant ce temps là dans notre `listener` j'ai accès à un shell en mode `FullLanguage` et pour pouvoir exécuter des commandes plutôt sympa.
+Et enfin pendant ce temps là dans notre `listener` j'ai accès à un shell en mode `FullLanguage` et pour pouvoir exécuter des commandes dans le système.
 
 ![Flower](https://image.noelshack.com/fichiers/2019/23/1/1559585801-screenshot-3.png)
 
