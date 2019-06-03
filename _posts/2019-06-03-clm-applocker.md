@@ -54,7 +54,7 @@ Et pendant ce temps là dans le dossier `*\PSByPassCLM-master\PSBypassCLM\PSBypa
 
 Reverse Shell
 ----
-Donc nous arrivons presque à la fin pour effectué notre reverse shell, nous allons utilisé l'outil `InstallUtil.exe` dans le même dossier que `MSBuild.exe`. Donc avant ça je vais crée un `listener` qui écoute le port `9001`.
+Donc nous arrivons presque à la fin pour effectuer notre reverse shell, nous allons utiliser l'outil `InstallUtil.exe` dans le même dossier que `MSBuild.exe`. Avant ça je vais crée un `listener` qui écoute le port `9001`.
 
 ![Flower](https://image.noelshack.com/fichiers/2019/23/1/1559585369-screenshot-1.png)
 
