@@ -35,7 +35,7 @@ AUCUNE LANGUE (NoLanguage) :
 
 En mode linguistique NoLanguage, les utilisateurs peuvent exécuter des commandes, mais ils ne peuvent utiliser aucun élément de langage dans un PowerShell.
 
-LANGUE CONTRAINTE (Constrained Language)
+LANGUE CONTRAINTE (Constrained Language) :
 
 Le mode de langage ConstrainedLanguage autorise toutes les cmdlets Windows et tous les éléments de langage PowerShell, mais limite les types autorisés.
 
