@@ -23,19 +23,19 @@ Il y'a `4 modes` en particulier en PowerShell :
 - RestrictedLanguage
 - NoLanguage
 
-LANGUE COMPLÈTE (FullLanguage) :
+## LANGUE COMPLÈTE (FullLanguage) :
 
 Le mode de langue FullLanguage autorise tous les éléments de langue de la session. FullLanguage est le mode de langue par défaut pour les sessions par défaut sur toutes les versions de Windows, à l'exception de Windows RT.
 
-LANGUE RESTREINTE (RestrictedLanguage) :
+## LANGUE RESTREINTE (RestrictedLanguage) :
 
 En mode linguistique RestrictedLanguage, les utilisateurs peuvent exécuter des commandes (applets de commande, fonctions, commandes CIM et workflows), mais ne sont pas autorisés à utiliser des blocs de script.
 
-AUCUNE LANGUE (NoLanguage) :
+## AUCUNE LANGUE (NoLanguage) :
 
 En mode linguistique NoLanguage, les utilisateurs peuvent exécuter des commandes, mais ils ne peuvent utiliser aucun élément de langage dans un PowerShell.
 
-LANGUE CONTRAINTE (Constrained Language) :
+## LANGUE CONTRAINTE (Constrained Language) :
 
 Le mode de langage ConstrainedLanguage autorise toutes les cmdlets Windows et tous les éléments de langage PowerShell, mais limite les types autorisés.
 
