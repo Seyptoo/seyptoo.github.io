@@ -14,7 +14,7 @@ Cet outil permet d'avoir beaucoup plus de permissions dans une session `PowerShe
 
 CLM
 ----
-Avant d'aller vers le technique, il faut avant tout comprendre le système `CLM`. Il s’agit d’une restriction qui vous empêche d’abuser de nombreuses fonctionnalités de powershell et de vous en servir pour énumérer, augmenter les privilèges, organiser des charges utiles et une tonne d’autres éléments. C'est `AppLocker` qui limite tout et bloque les accès.
+Avant d'aller vers le technique, il faut avant tout comprendre le système `CLM`. Il s’agit d’une restriction qui vous empêche d’abuser de nombreuses fonctionnalités de powershell et de vous en servir pour énumérer, augmenter les privilèges, organiser des charges utiles et une tonne d’autres éléments. C'est `AppLocker` qui limite tout et bloque les accès, AppLocker c'est un système pour côntrolez des applications et de gérer il peut-être disponible sur `Windows Server` et `Windows 10`.
 
 Il y'a `4 modes` en particulier en PowerShell : 
 
