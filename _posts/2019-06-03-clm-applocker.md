@@ -42,7 +42,7 @@ Le mode de langage `ConstrainedLanguage` autorise toutes les cmdlets Windows et 
 CHANGER DE LANGUE/MODE
 ----
 
-Il est tout à fait possible de changer de `LANGUE/MODE` depuis le registre pour assurer la sécurité, il y a d'autre moyen également, par exemple faire avec le système `GPO` (Group Policy Object) dans un environnement `Active Directory`.
+Il est tout à fait possible de changer de `LANGUE/MODE` depuis le registre pour assurer la sécurité, il y'a d'autre moyen également, par exemple faire avec le système `GPO` (Group Policy Object) ou en français (Stratégies de groupe) dans un environnement `Active Directory`.
 
 ![Flower](https://image.noelshack.com/fichiers/2019/23/2/1559643342-screenshot-1.png)
 
