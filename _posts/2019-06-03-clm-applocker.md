@@ -43,7 +43,7 @@ Il est tout à fait possible de changer de `LANGUE/MODE` depuis le registre pour
 
 ![Flower](https://image.noelshack.com/fichiers/2019/23/2/1559643342-screenshot-1.png)
 
-Le chemin pour modifier de `LANGUE/MODE` est dans `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment`, et par défault il y a pas de `Valeur chaîne/REG_SZ` qui se nomme `__PSLockdownPolicy`, il faut crée une valeur qui se nomme `__PSLockdownPolicy` et il accepte seulement 4 `donnée`.
+Le chemin pour modifier de `LANGUE/MODE` est dans `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment`, et par défaut il y'a pas de `Valeur chaîne/REG_SZ` qui se nomme `__PSLockdownPolicy`, il faut créé une valeur qui se nomme `__PSLockdownPolicy` et il accepte seulement 4 `donnée(s)`.
 
 La donnée (1) : Pour le `FullLanguage`. <br />
 La donnée (2) : Pour le `RestrictedLanguage`. <br />
