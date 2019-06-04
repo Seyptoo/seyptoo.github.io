@@ -45,10 +45,10 @@ Il est tout à fait possible de changer de `LANGUE/MODE` depuis le registre pour
 
 Le chemin pour modifier de `LANGUE/MODE` est dans `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment`, et par défault il y a pas de `Valeur chaîne/REG_SZ` qui se nomme `__PSLockdownPolicy`, il faut crée une valeur qui se nomme `__PSLockdownPolicy` et il accepte seulement 4 `donnée`.
 
-La donnée (1) : Pour le `FullLanguage`.
-La donnée (2) : Pour le `RestrictedLanguage`.
-La donnée (3) : Pour le `NoLanguage`.
-La donnée (4) : Pour le `ConstrainedLanguage`
+La donnée (1) : Pour le `FullLanguage`. <br />
+La donnée (2) : Pour le `RestrictedLanguage`. <br />
+La donnée (3) : Pour le `NoLanguage`. <br />
+La donnée (4) : Pour le `ConstrainedLanguage` <br />
 
 DEMONSTRATION
 ----
