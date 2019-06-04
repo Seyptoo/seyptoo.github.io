@@ -76,7 +76,7 @@ Commencer par ouvrir `Exécuter` avec la touche `WINDOWS + R` et ensuite de sais
 
 Build
 ----
-Allez dans les dossiers de `.NET` pour build le fichier `.sln` dans le dossier `PSByPassCLM-master`. Le dossier 
+Allez dans les dossiers de `.NET` pour build le fichier `.sln` dans le dossier `PSByPassCLM-master`. Le dossier de `.NET` est situer dans `C:\Windows\Microsoft.NET\Framework64\v4*`.
 
     PS C:\Users\Administrateur> cd C:\Windows\Microsoft.NET\Framework64\v4*
     PS C:\Windows\Microsoft.NET\Framework64\v4.0.30319> .\MSBuild.exe C:\Users\Administrateur\Desktop\PSByPassCLM-master\PSBypassCLM\PsBypassCLM.sln
