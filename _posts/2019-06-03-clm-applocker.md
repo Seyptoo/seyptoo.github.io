@@ -1,5 +1,5 @@
 ---
-title: "[AppLocker CLM] Bypass le mode de langage contraint en PowerShell"
+title: "[CLM] Bypass le mode de langage contraint en PowerShell"
 description: clm.jpg
 tags: ["Dans cet article je vous présente le système CLM (Constrained Language Mode) vous montrez le fonctionnement et de vous montrez comment bypass ce système qui vous donne pas assez de permissions dans un système PowerShell."]
 ---
@@ -56,7 +56,7 @@ Donnée (4) : Pour le `ConstrainedLanguage` <br />
 DEMONSTRATION
 ----
 
-Actuellement je suis en mode `FullLanguage`. La commande à exécuter pour examiner la/le `LANGUE/MODE` de votre session PowerShell `$ExecutionContext.SessionState` :
+Actuellement je suis en mode `FullLanguage`. La commande à exécuter pour examiner le mode de `LANGAGE` de votre session PowerShell `$ExecutionContext.SessionState` :
 
 ![Flower](https://image.noelshack.com/fichiers/2019/23/1/1559581679-screenshot-2.png)
 
@@ -108,3 +108,4 @@ Et enfin pendant ce temps là dans notre `listener` j'ai accès à un shell en m
 
 CONCLUSION
 ----
+Voilà, nous arrivons enfin au bout de cet article qui, je l’espère, aura éclairci certaines choses. C'était indéniable de vous présenter ce système car en `PENTEST` dans les machines `Windows` ça m'est déjà arrivé et c'était nécessaire de faire un `TUTORIAL` sur ce système.
