@@ -19,9 +19,9 @@ Avant d'aller vers le technique, il faut avant tout comprendre le système `CLM`
 Il y'a `4 modes` en particulier en PowerShell : 
 
 - FullLanguage
-- ConstrainedLanguage
 - RestrictedLanguage
-- NoLanguage
+- NoLanguage 
+- ConstrainedLanguage
 
 ## LANGUE COMPLÈTE (FullLanguage) :
 
