@@ -56,17 +56,15 @@ Donnée (4) : Pour le `ConstrainedLanguage` <br />
 DEMONSTRATION
 ----
 
-Actuellement je suis en mode `FullLanguage`. La commande à exécuter pour examiner le `LANGUE/MODE` de votre session PowerShell `$ExecutionContext.SessionState` :
+Actuellement je suis en mode `FullLanguage`. La commande à exécuter pour examiner la/le `LANGUE/MODE` de votre session PowerShell `$ExecutionContext.SessionState` :
 
 ![Flower](https://image.noelshack.com/fichiers/2019/23/1/1559581679-screenshot-2.png)
 
-Comme vous pouvez le voir, je suis en mode `FullLanguage`, cette fonctionnalité designe justement j'ai les permissions pour exécuter des tâches (Ce qui est plutôt cool).
-
-Mais dans certains cas vous pouvez voir ce type de chose pour éviter que les intrus exécutent n'importe quoi ou bien pour la sécurité : <br />
+Comme vous pouvez le constater, je suis en mode `FullLanguage`, cette fonctionnalité designe justement j'ai les permissions pour exécuter des tâches, ce qui est plutôt pas mal. Mais dans certains cas assez étrange, vous pouvez percevoir ce type de chose pour éviter que les intrus exécutent n'importe quoi ou bien simplement pour la sécurité : <br />
 
 ![Flower](https://image.noelshack.com/fichiers/2019/23/1/1559586084-screenshot-4.png)
 
-Concrètement comme vous pouvez le voir je suis en mode `ConstrainedLanguage`, vous ne pouvez pas par exemple exécuter un fichier à distance, télécharger des fichiers à distance etc..
+Concrètement comme vous pouvez le voir je suis en mode `ConstrainedLanguage`, donc impossible d'exécuter un fichier à distance, télécharger des fichiers à distance etc..
 
 .NET
 ----
@@ -78,7 +76,7 @@ Commencer par ouvrir `Exécuter` avec la touche `WINDOWS + R` et ensuite de sais
 
 Build
 ----
-Allez dans les dossiers de `.NET` pour build le fichier `.sln` dans le dossier `PSByPassCLM-master`.
+Allez dans les dossiers de `.NET` pour build le fichier `.sln` dans le dossier `PSByPassCLM-master`. Le dossier 
 
     PS C:\Users\Administrateur> cd C:\Windows\Microsoft.NET\Framework64\v4*
     PS C:\Windows\Microsoft.NET\Framework64\v4.0.30319> .\MSBuild.exe C:\Users\Administrateur\Desktop\PSByPassCLM-master\PSBypassCLM\PsBypassCLM.sln
