@@ -64,7 +64,7 @@ Comme vous pouvez le constater, je suis en mode `FullLanguage`, cette fonctionna
 
 ![Flower](https://image.noelshack.com/fichiers/2019/23/1/1559586084-screenshot-4.png)
 
-Concrètement comme vous pouvez le voir je suis en mode `ConstrainedLanguage`, donc impossible d'exécuter un fichier à distance, télécharger des fichiers à distance etc..
+Concrètement d'après l'information je suis en mode `ConstrainedLanguage`, donc impossible d'exécuter un fichier à distance, télécharger des fichiers à distance etc.. Notre but maintenant c'est de changer de mode de `LANGAGE` passer de `ConstrainedLanguage` à `FullLanguage` pour effectuer des actions sur le système avec la session PowerShell. 
 
 .NET
 ----
