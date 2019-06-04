@@ -56,7 +56,7 @@ Donnée (4) : Pour le `ConstrainedLanguage` <br />
 DEMONSTRATION
 ----
 
-La commande à exécuter pour examiner le mode de `LANGAGE` de votre session PowerShell `$ExecutionContext.SessionState` :
+Actuellement je suis en mode `FullLanguage`. La commande à exécuter pour examiner le mode de `LANGAGE` de votre session PowerShell `$ExecutionContext.SessionState` :
 
 ![Flower](https://image.noelshack.com/fichiers/2019/23/1/1559581679-screenshot-2.png)
 
