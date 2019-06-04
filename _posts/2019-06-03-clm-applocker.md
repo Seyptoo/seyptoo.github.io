@@ -39,11 +39,25 @@ En mode linguistique `NoLanguage`, les utilisateurs peuvent exécuter des comman
 
 Le mode de langage `ConstrainedLanguage` autorise toutes les cmdlets Windows et tous les éléments de langage PowerShell, mais limite les types autorisés.
 
-Actuellement je suis en mode `FullLanguage`, si vous souhaitez voir le mode dans votre PowerShell tapez cette commande `$ExecutionContext.SessionState` :
+Il est tout à fait possible de changer de `LANGUE/MODE` depuis le registre pour assurer la sécurité, il y a d'autre moyen également, par exemple faire avec le système `GPO` (Group Policy Object) dans un environnement `Active Directory`.
+
+![Flower](https://image.noelshack.com/fichiers/2019/23/2/1559643342-screenshot-1.png)
+
+Le chemin pour modifier de `LANGUE/MODE` est dans `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment`, et par défault il y a pas de `Valeur chaîne/REG_SZ` qui se nomme `__PSLockdownPolicy`, il faut crée une valeur qui se nomme `__PSLockdownPolicy` et il accepte seulement 4 `donnée`.
+
+La donnée (1) : Pour le `FullLanguage`.
+La donnée (2) : Pour le `RestrictedLanguage`.
+La donnée (3) : Pour le `NoLanguage`.
+La donnée (4) : Pour le `ConstrainedLanguage`
+
+DEMONSTRATION
+----
+
+Actuellement je suis en mode `FullLanguage`, la commande à exécuter `$ExecutionContext.SessionState` :
 
 ![Flower](https://image.noelshack.com/fichiers/2019/23/1/1559581679-screenshot-2.png)
 
-Comme vous pouvez le voir, je suis en mode `FullLanguage`, cette fonctionnalité designe que justement j'ai les permissions pour exécuter des tâches (Ce qui est plutôt cool).
+Comme vous pouvez le voir, je suis en mode `FullLanguage`, cette fonctionnalité designe justement j'ai les permissions pour exécuter des tâches (Ce qui est plutôt cool).
 
 Mais dans certains cas vous pouvez voir ce type de chose pour éviter que les intrus exécutent n'importe quoi ou bien pour la sécurité : <br />
 
