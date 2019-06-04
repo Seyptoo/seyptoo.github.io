@@ -109,6 +109,7 @@ Et enfin pendant ce temps là dans notre `listener` j'ai accès à un shell en m
 CONCLUSION
 ----
 
+Voilà, nous arrivons enfin au bout de cet article qui, je l’espère, aura éclairci certaines choses. C'était indéniable de vous présenter ce système car en `PENTEST` dans les machines `Windows` ça m'est déjà arrivé et c'était nécessaire de faire un `TUTORIAL` sur ce système.
+
 ![Flower](../dog.gif)
 
-Voilà, nous arrivons enfin au bout de cet article qui, je l’espère, aura éclairci certaines choses. C'était indéniable de vous présenter ce système car en `PENTEST` dans les machines `Windows` ça m'est déjà arrivé et c'était nécessaire de faire un `TUTORIAL` sur ce système.
