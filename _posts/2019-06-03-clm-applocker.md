@@ -72,8 +72,6 @@ Avant de commencer les choses nous devons commencer par télécharger le framewo
 
 Commencer par ouvrir `Exécuter` avec la touche `WINDOWS + R` et ensuite de saisir `appwiz.cpl` et ensuite d'aller vers `Activer ou désactiver des fonctionnalités Windows`. Chercher ce système `.NET Framework 3.5 (inclut .NET 2.0 et 3.0)` (pour mon cas). Vous cochez la petite case et ensuite vous appuyez sur `OK` afin d'installer `.NET` sur votre ordinateur.
 
-![Flower](https://image.noelshack.com/fichiers/2019/23/1/1559583478-screenshot-5.png)
-
 Build
 ----
 Allez dans les dossiers de `.NET` pour build le fichier `.sln` dans le dossier `PSByPassCLM-master`. Le dossier de `.NET` est situer dans `C:\Windows\Microsoft.NET\Framework64\v4*`.
