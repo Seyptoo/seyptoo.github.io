@@ -66,14 +66,14 @@ Mais dans certains cas assez étrange, vous pouvez percevoir ce type de chose po
 
 Concrètement d'après l'information je suis en mode `ConstrainedLanguage`, donc impossible d'exécuter un fichier à distance, télécharger des fichiers à distance etc.. Notre but maintenant c'est de changer de mode de `LANGAGE` passer de `ConstrainedLanguage` à `FullLanguage` pour effectuer des actions sur le système avec la session PowerShell. 
 
-.NET
-----
+## .NET
+
 Avant de commencer les choses nous devons commencer par télécharger le framework `.NET`. Le .NET Framework est un cadriciel pouvant être utilisé par un système d'exploitation Microsoft Windows et Microsoft Windows Mobile depuis la version 5.
 
 Commencer par ouvrir `Exécuter` avec la touche `WINDOWS + R` et ensuite de saisir `appwiz.cpl` et ensuite d'aller vers `Activer ou désactiver des fonctionnalités Windows`. Chercher ce système `.NET Framework 3.5 (inclut .NET 2.0 et 3.0)` (pour mon cas). Vous cochez la petite case et ensuite vous appuyez sur `OK` afin d'installer `.NET` sur votre ordinateur.
 
-Build
-----
+## Build
+
 Allez dans les dossiers de `.NET` pour build le fichier `.sln` dans le dossier `PSByPassCLM-master`. Le dossier de `.NET` est situer dans `C:\Windows\Microsoft.NET\Framework64\v4*`.
 
     PS C:\Users\Administrateur> cd C:\Windows\Microsoft.NET\Framework64\v4*
@@ -81,8 +81,8 @@ Allez dans les dossiers de `.NET` pour build le fichier `.sln` dans le dossier `
  
 Et pendant ce temps là dans le dossier `*\PSByPassCLM-master\PSBypassCLM\PSBypassCLM\bin\Debug\PsBypassCLM` il a crée un fichier exécutable et ce fichier va nous permettre de changer de mode dans une session PowerShell.
 
-Reverse Shell
-----
+## Reverse Shell
+
 Donc nous arrivons presque à la fin pour effectuer notre reverse shell, nous allons utiliser l'outil `InstallUtil.exe` dans le même dossier que `MSBuild.exe`. Avant ça je vais crée un `listener` qui écoute le port `9001`.
 
     PS C:\Users\Administrateur\Desktop\netcat-1.11> nc.exe -lvnp 9001
