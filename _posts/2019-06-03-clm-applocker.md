@@ -74,14 +74,10 @@ Commencer par ouvrir `Executer` avec la touche `WINDOWS + R` et ensuite de saisi
 
 Vous pouvez également très bien faire avec la ligne de commande, avec la l'outil `get-windowsoptionalfeature` en PowerShell ou bien avec `cmd` avec `DISM`. Il y'a de très bonne documentation sur le web, pour mieux comprendre l'outil.
 
-Documentation en PowerShell : [GET-WINDOWSOPTIONALFEATURE](https://docs.microsoft.com/en-us/powershell/module/dism/get-windowsoptionalfeature?view=win10-ps)
-Documentation en invite de commandes : [DISM](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14)
+Documentation en PowerShell : [GET-WINDOWSOPTIONALFEATURE](https://docs.microsoft.com/en-us/powershell/module/dism/get-windowsoptionalfeature?view=win10-ps) <br />
+Documentation en invite de commandes : [DISM](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14) <br />
 
 ![Flower](https://image.noelshack.com/fichiers/2019/23/5/1559943614-screenshot-2.png)
-
-Si la valeur est `Enabled` le programme est installé, par défault le programme n'est pas installé donc pour installer l'outil tapez la commande ci-dessous.
-
-![Flower](https://image.noelshack.com/fichiers/2019/23/5/1559944341-screenshot-3.png)
 
 ## Build
 
