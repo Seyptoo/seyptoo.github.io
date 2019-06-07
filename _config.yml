@@ -10,7 +10,7 @@ hide_title: false            # remove site heading in the header
 post_footer: true            # show previous and next links at the end of each post
 
 # Theme settings
-dark_theme: true            # use the dark mode as default
+dark_theme: false            # use the dark mode as default
 dark_header: true            # keep the header dark
 # style: minimal             # use a simpler style inspired by the minima theme
 
