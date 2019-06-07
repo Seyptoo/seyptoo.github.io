@@ -378,3 +378,6 @@ Et ensuite on a juste à faire le reverse shell depuis notre machine physique po
 	C:\Windows\system32>whoami
 	nt authority\system
 
+CONCLUSION
+----
+Voilà, nous arrivons enfin au bout de cet article qui, je l’espère, vous aura plus. Une boîte vraiment intéréssante et concrètement assez originale, il y'avais pas mal de manipulation et de configurationà faire au niveau du protocole `IPSEC` mais ça reste une très bonne boîte.
