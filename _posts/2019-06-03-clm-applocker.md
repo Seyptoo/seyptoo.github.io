@@ -48,19 +48,19 @@ Il est tout à fait possible de changer de `LANGUE/MODE` depuis le registre pour
 
 Le chemin pour modifier de `LANGUE/MODE` est dans `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment`, et par défaut il y'a pas de `Valeur chaîne/REG_SZ` qui se nomme `__PSLockdownPolicy`, il faut créé une valeur qui se nomme `__PSLockdownPolicy` et il accepte seulement 4 `donnée(s)`.
 
-Donnée (1)  : Pour le `FullLanguage`. <br />
-Donnée (2) : Pour le `RestrictedLanguage`. <br />
-Donnée (3) : Pour le `NoLanguage`. <br />
-Donnée (4) : Pour le `ConstrainedLanguage` <br />
+Donnée ( 1 ) : Pour le `FullLanguage`. <br />
+Donnée ( 2 ) : Pour le `RestrictedLanguage`. <br />
+Donnée ( 3 ) : Pour le `NoLanguage`. <br />
+Donnée ( 4 ) : Pour le `ConstrainedLanguage` <br />
 
 DEMONSTRATION
 ----
 
-Actuellement je suis en mode `FullLanguage`. La commande à exécuter pour examiner le mode de `LANGAGE` de votre session PowerShell `$ExecutionContext.SessionState` :
+Comme vous pouvez le constater, je suis en mode `FullLanguage`, cette fonctionnalité designe justement j'ai les permissions pour exécuter des tâches, ce qui est plutôt pas mal. La commande à exécuter pour examiner le mode de `LANGAGE` de votre session PowerShell `$ExecutionContext.SessionState` :
 
 ![Flower](https://image.noelshack.com/fichiers/2019/23/1/1559581679-screenshot-2.png)
 
-Comme vous pouvez le constater, je suis en mode `FullLanguage`, cette fonctionnalité designe justement j'ai les permissions pour exécuter des tâches, ce qui est plutôt pas mal. Mais dans certains cas assez étrange, vous pouvez percevoir ce type de chose pour éviter que les intrus exécutent n'importe quoi ou bien simplement pour la sécurité : <br />
+Mais dans certains cas assez étrange, vous pouvez percevoir ce type de chose pour éviter que les intrus exécutent n'importe quoi ou bien simplement pour la sécurité : <br />
 
 ![Flower](https://image.noelshack.com/fichiers/2019/23/1/1559586084-screenshot-4.png)
 
@@ -108,4 +108,3 @@ CONCLUSION
 ----
 
 Voilà, nous arrivons enfin au bout de cet article qui, je l’espère, aura éclairci certaines choses. C'était indéniable de vous présenter ce système car en `PENTEST` dans les machines `Windows` ça m'est déjà arrivé et c'était nécessaire de faire un `TUTORIAL` sur ce système.
-
