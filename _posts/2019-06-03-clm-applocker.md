@@ -70,7 +70,7 @@ Concrètement d'après l'information je suis en mode `ConstrainedLanguage`, donc
 
 Avant de commencer les choses nous devons commencer par télécharger le framework `.NET`. Le .NET Framework est un cadriciel pouvant être utilisé par un système d'exploitation Microsoft Windows et Microsoft Windows Mobile depuis la version 5.
 
-Commencer par ouvrir `Exécuter` avec la touche `WINDOWS + R` et ensuite de saisir `appwiz.cpl` et ensuite d'aller vers `Activer ou désactiver des fonctionnalités Windows`. Chercher ce système `.NET Framework 3.5 (inclut .NET 2.0 et 3.0)` (pour mon cas). Vous cochez la petite case et ensuite vous appuyez sur `OK` afin d'installer `.NET` sur votre ordinateur.
+Commencer par ouvrir `executer` avec la touche `WINDOWS + R` et ensuite de saisir `appwiz.cpl` et ensuite d'aller vers `Enable or disable Windows features`. Chercher ce système `.NET Framework 3.5 (inclut .NET 2.0 et 3.0)` (pour mon cas). Vous cochez la petite case et ensuite vous appuyez sur `OK` afin d'installer `.NET` sur votre ordinateur.
 
 ## Build
 
