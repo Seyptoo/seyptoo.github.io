@@ -72,6 +72,17 @@ Avant de commencer les choses nous devons commencer par télécharger le framewo
 
 Commencer par ouvrir `Executer` avec la touche `WINDOWS + R` et ensuite de saisir `appwiz.cpl` et ensuite d'aller vers `Enable or disable Windows features`. Chercher ce système `.NET Framework 3.5 (inclut .NET 2.0 et 3.0)` (pour mon cas). Vous cochez la petite case et ensuite vous appuyez sur `OK` afin d'installer `.NET` sur votre ordinateur.
 
+Vous pouvez également très bien faire avec la ligne de commande, avec la l'outil `get-windowsoptionalfeature` en PowerShell ou bien avec `cmd` avec `DISM`. Il y'a de très bonne documentation sur le web, pour mieux comprendre l'outil.
+
+Documentation en PowerShell : [GET-WINDOWSOPTIONALFEATURE](https://docs.microsoft.com/en-us/powershell/module/dism/get-windowsoptionalfeature?view=win10-ps)
+Documentation en invite de commandes : [DISM](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14)
+
+![Flower](https://image.noelshack.com/fichiers/2019/23/5/1559943614-screenshot-2.png)
+
+Si la valeur est `Enabled` le programme est installé, par défault le programme n'est pas installé donc pour installer l'outil tapez la commande ci-dessous.
+
+![Flower](https://image.noelshack.com/fichiers/2019/23/5/1559944341-screenshot-3.png)
+
 ## Build
 
 Allez dans les dossiers de `.NET` pour build le fichier `.sln` dans le dossier `PSByPassCLM-master`. Le dossier de `.NET` est situer dans `C:\Windows\Microsoft.NET\Framework64\v4*`.
