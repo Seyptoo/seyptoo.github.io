@@ -27,7 +27,9 @@
     <nav>
     {% for path in site.navigation %}
       {% if path.first %}
-        <a href="{{ path.first[1] }}">{{ path.first[0] }}</a>
+        <a href="/">ACCUEIL</a>
+        <a href="/propos/">A PROPOS</a>
+        <a href="/archive/">ARCHIVE</a>
       {% else %}
         {% assign node = site.pages | where: "name", path | first %}<a href="{{ node.url | relative_url }}">{{ node.title }}</a>
       {% endif %}
