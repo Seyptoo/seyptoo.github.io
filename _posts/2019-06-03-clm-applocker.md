@@ -2,6 +2,7 @@
 title: "[CLM] Bypass le mode de langage contraint en PowerShell"
 description: clm.jpg
 tags: ["Dans cet article je vous présente le système CLM (Constrained Language Mode) vous montrez le fonctionnement et de vous montrez comment bypass ce système qui vous donne pas assez de permissions dans un système PowerShell."]
+comments: true
 ---
 
 ![Flower](../clm.jpg)
