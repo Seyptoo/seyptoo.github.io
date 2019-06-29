@@ -1,10 +1,10 @@
 ---
 title: "HackTheBox - Netmon"
 description: "fileoutput.jpg"
-tags: ["Dans cet article je vous présente comment être administrateur dans la boîte Netmon, une boîte relativement simple et assez cool."]
+tags: ["Dans cet article je vous présente comment être administrateur dans la boîte Netmon, c'était une boîte très amusante mais en même temps très facile. Le FTP n'était pas chroot dans le système ce qui nous permettait de lire des fichiers plus ou moins sensible, il y'avait un service PRTG Network Monitor qui tournait ce qui nous permettait d'être administrateur dans le système]
 ---
 
-![Flower](fileoutput.jpg)
+![Flower](../fileoutput.jpg)
 
 Informations
 ----
