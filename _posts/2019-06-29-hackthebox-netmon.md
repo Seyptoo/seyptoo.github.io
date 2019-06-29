@@ -175,6 +175,10 @@ Une fois connecté au service nous allons allez dans `Setup` et ensuite notifica
 
 `test.txt;net user seyptoo 123 /add;net localgroup administrators seyptoo /add`
 
+Vous devez mettre les informations dans la section `Parameter` et de mettre les informations pour créé notre utilisateur comme administrateur.
+
+![Flower](https://image.noelshack.com/fichiers/2019/26/6/1561826366-1551726674533.png)
+
 ![Flower](https://image.noelshack.com/fichiers/2019/26/6/1561823969-1551726729729.png)
 
 Vous enregistrez la notification et ensuite vous cliquez sur la petite cloche et normalement votre commande a été exécuter avec succès.
