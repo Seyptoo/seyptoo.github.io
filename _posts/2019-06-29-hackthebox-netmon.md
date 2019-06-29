@@ -179,9 +179,9 @@ Vous devez mettre les informations dans la section `Parameter` et de mettre les 
 
 ![Flower](https://image.noelshack.com/fichiers/2019/26/6/1561826366-1551726674533.png)
 
-![Flower](https://image.noelshack.com/fichiers/2019/26/6/1561823969-1551726729729.png)
+Vous enregistrez la notification et ensuite vous cliquez sur la petite cloche et normalement votre commande a été exécuter avec succès. Vous devriez un peu patienter pour que la commande sois exécuter avec certitude.
 
-Vous enregistrez la notification et ensuite vous cliquez sur la petite cloche et normalement votre commande a été exécuter avec succès.
+![Flower](https://image.noelshack.com/fichiers/2019/26/6/1561823969-1551726729729.png)
 
 PrivEsc
 ----
