@@ -13,7 +13,7 @@ Informations
     
 Résumé : <br />
 
-Le système Conceal, disponible sur la platform [HackTheBox](https://www.hackthebox.eu/), fut très intéressant et amusante. La boîte était relativement simple. De plus, j’ai appris beaucoup de chose tout au long de l’exploitation des failles de ce système. <br />
+Le système Netmon, disponible sur la platforme [HackTheBox](https://www.hackthebox.eu/), fut très intéressant et amusante. La boîte était relativement simple. De plus, j’ai appris beaucoup de chose tout au long de l’exploitation des failles de ce système. <br />
 
 - Le protocole `FTP` est ouvert, et il était possible de se connecter en `anonymous`.
 - Le service FTP n'est pas `chroot` ce qui nous permettait de lire des fichiers dans le système.
